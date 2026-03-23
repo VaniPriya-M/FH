@@ -171,7 +171,7 @@ If no dates are available in the current month, we click the next-month arrow an
 
 ## What's Next
 
-Things worth adding if this grows beyond a single happy path:
+Things worth adding if this grows beyond:
 
 - **API seeding** — create test users/bookings via API instead of going through the UI every time
 - **Negative tests** — declined card, expired session, no available slots
@@ -179,3 +179,6 @@ Things worth adding if this grows beyond a single happy path:
 - **Accessibility** — `@axe-core/playwright` on each page load
 - **Better waits** — replace `waitForTimeout` with proper network or DOM condition waits where possible
 - **Parallel-safe data** — generate unique email per test run to allow parallel execution
+- **Encrypt test data** — key test data like password, card numbers, etc should come from secured location.
+- **Use specific test data** — current test data is selecting the first available location, date and time slots. It needs to be changed to use specific test data for each test case..
+- **Test data cleanup** — Test data clean up needs to be done in the upcoming iterations.
