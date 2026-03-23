@@ -1,0 +1,24 @@
+# Dependencies
+node_modules/
+
+# Environment (contains secrets)
+#.env
+
+# Playwright artifacts
+playwright-report/
+playwright/.auth/
+test-results/
+screenshots/
+blob-report/
+
+# Build output
+dist/
+
+# OS files
+Thumbs.db
+.DS_Store
+
+# IDE
+.vscode/
+.idea/
+*.swp
